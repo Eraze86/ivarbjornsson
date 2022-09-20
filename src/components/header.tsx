@@ -12,9 +12,9 @@ export function Header() {
     return (<>
 
         <header className="max-h-full">
-            <nav className="bg-black sm:bg-white h-16 flex justify-between items-center">
+            <nav className="fixed bg-black sm:bg-white h-16 flex justify-between items-center w-full">
                 <div className="w-72 sm:max-w-full ">
-                    <svg className=" sm:h-16 p-4 pl-12 pr-12 bg-black" id="Lager_2" fill="white" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 863.49 81.21">
+                    <svg className=" sm:h-16 p-4 sm:pl-12 sm:pr-12 bg-black" id="Lager_2" fill="white" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 863.49 81.21">
                         <g id="Lager_1-2" data-name="Lager 1">
                             <g>
                                 <path d="M0,79.9V8.3H3.2V79.9H0Z" />
@@ -39,8 +39,9 @@ export function Header() {
 
                
             </nav>
+            
 
-            <section className="flex flex-col lg:flex-row">
+            <section className="flex flex-col lg:flex-row pt-16">
 
                 <div className="max-w-full lg:w-3/6">
                     <img src={seal1} /></div>
