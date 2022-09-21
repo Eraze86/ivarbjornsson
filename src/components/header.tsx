@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import seal1 from "../img/Dall1.png"
 import seal2 from "../img/Dall2.png"
 import seal3 from "../img/Dall3.png"
@@ -12,7 +12,7 @@ export function Header() {
     return (<>
 
         <header className="max-h-full">
-            <nav className="fixed bg-black sm:bg-white h-16 flex justify-between items-center w-full">
+            <nav className="z-10 fixed bg-black sm:bg-white h-16 flex justify-between items-center w-full">
                 <div className="w-72 sm:max-w-full ">
                     <svg className=" sm:h-16 p-4 sm:pl-12 sm:pr-12 bg-black" id="Lager_2" fill="white" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 863.49 81.21">
                         <g id="Lager_1-2" data-name="Lager 1">
@@ -44,9 +44,9 @@ export function Header() {
             <section className="flex flex-col lg:flex-row pt-16">
 
                 <div className="max-w-full lg:w-3/6">
-                    <img src={seal1} /></div>
+                    <img src={seal1} alt="picture of a seal with jewerly"/></div>
                 <div className="max-w-full lg:w-3/6">
-                    <h1 className="text-5xl lg:text-7xl m-7">Precuise säl</h1>
+                    <h1 className="text-5xl lg:text-7xl m-7">Precious säl</h1>
                     <p className="text-base lg:text-xl m-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut venenatis tellus in metus vulputate. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Pellentesque nec nam
                         aliquam sem et tortor consequat id porta. Purus sit amet volutpat consequat mauris nunc. Euismod nisi porta lorem mollis
