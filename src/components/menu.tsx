@@ -35,7 +35,7 @@ export function Menu() {
             tl.to([toggle.current], { height: "18rem", ease: "none" })
             tl.to([link.current], { delay: 0.2, opacity: 1 })
         } else {
-
+        
         }
     }, [isOpen, tl])
 
