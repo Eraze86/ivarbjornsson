@@ -1,20 +1,73 @@
-export function Header(){
-    return(<>
+import { Menu } from "./menu"
+import { Slide } from "./slide"
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
+import { Cockie } from "./cockie";
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                       <a>Länk</a>
-                </li>
-                <li>
-                       <a>Länk</a>
-                </li>
-                <li>
-                       <a>Länk</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+export function Header() {
+    const I = useRef(null);
+    const V = useRef(null);
+    const A = useRef(null);
+    const R = useRef(null);
+    const B= useRef(null);
+    const J = useRef(null);
+    const OE = useRef(null);
+    const R1 = useRef(null);
+    const N = useRef(null);
+    const S = useRef(null);
+    const S1 = useRef(null);
+    const O = useRef(null);
+    const N1 = useRef(null);
+   
+    const tl = gsap.timeline()
+    let time = { y: -15, yoyo: true , delay: -0.5, repeat: 1, duration: 0.3 }
+    useEffect(() => {
+
+            tl.to([I.current], { y: -15, yoyo: true,  repeat: 1, duration: 0.2 })
+            tl.to([V.current], time)
+            tl.to([A.current], time)
+            tl.to([R.current], time)
+            tl.to([B.current], time)
+            tl.to([J.current], time)
+            tl.to([OE.current], time)
+            tl.to([R1.current], time)
+            tl.to([N.current], time)
+            tl.to([S.current], time)
+            tl.to([S1.current], time)
+            tl.to([O.current], time)
+            tl.to([N1.current], time)  
+        
+    }, [tl])
+
+
+    return (<>
+        <header className="max-h-full">
+            <nav className="z-10 fixed bg-black sm:bg-white h-16 flex justify-between items-center w-full">
+                <div className="w-72 sm:max-w-full ">
+                    <svg className=" sm:h-16 p-4 sm:pl-12 sm:pr-12 bg-black" id="Lager_2" fill="white" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 863.49 81.21">
+                        <g id="Lager_1-2" data-name="Lager 1">
+                            <g>
+                                <path ref={I} d="M0,79.9V8.3H3.2V79.9H0Z" />
+                                <path ref={V} d="M37.9,79.9L11.1,8.3h3.5l23.3,62.4L61.5,8.3h3.4l-27,71.6Z" />
+                                <path ref={A} d="M126.2,79.9V34.4h-43.6c-6,13.6-8.7,25.4-8.6,37.7v7.8h-3.2v-7.8c0-19,5.9-37.8,21.3-60.6h-21v-3.2h58.3V79.9h-3.2Zm0-68.4h-30.2c-3.6,5.3-6.4,8.9-11.7,19.8h41.9V11.5Z" />
+                                <path ref={R} d="M179,51.5l18.1,28.4h-3.9l-16.4-25.7c-9.7,11-21.8,20.1-35.4,25.7V8.3h57.7c-2.6,15.9-10,30.8-20.1,43.2ZM144.6,11.6v63.5c24.9-11.6,44.8-36.7,50.6-63.5h-50.6Z" />
+                                <path ref={B} d="M284.5,46.5c8.1,9.2,16.2,21.2,18.8,33.4h-58.4V8.3h58.4c-1.7,14.1-9.7,27.5-18.8,38.2ZM248.1,11.5v61.6c24.6-16.4,45.4-34.8,51.2-61.6h-51.2Zm34.5,37.2c-8.9,9-23.5,22-34.5,27.9h51.1c-2.8-9.4-9-18.5-16.6-27.9Z" />
+                                <path ref={J} d="M321.9,50.2h4c-6,8.1-10.5,17-14.1,26.4h49.6V8.3h3.2V79.9h-57.2c2.8-9.3,8.7-22,14.5-29.7Z" />
+                                <path ref={OE} d="M373.4,44c0-20.5,16.7-37.2,37.2-37.2s37.2,16.7,37.2,37.2-16.7,37.2-37.2,37.2-37.2-16.7-37.2-37.2Zm3.1,0c0,18.8,15.3,34.1,34.1,34.1s34-15.3,34-34.1-15.2-34-34-34-34.1,15.2-34.1,34ZM393.4,0h3.6V3.2h-3.6V0Zm29.2,0h3.6V3.2h-3.6V0Z" />
+                                <path ref={R1} d="M494.5,51.5l18.1,28.4h-3.9l-16.4-25.7c-9.7,11-21.8,20.1-35.4,25.7V8.3h57.7c-2.6,15.9-10,30.8-20.1,43.2Zm-34.4-39.9v63.5c24.9-11.6,44.8-36.7,50.6-63.5h-50.6Z" />
+                                <path ref={N} d="M578.9,79.9V37.1c-14.6-11.3-34.1-21.8-52.4-25.2V79.9h-3.2V8.4c17.4,1.5,41.9,14,55.6,24.8V8.4h3.2V79.9h-3.2Z" />
+                                <path ref={S} d="M609.29,11.5c-6.6,0-14.5,1.2-14.5,9.6s7.6,10.2,14.5,10.2h35.9c1.8,0,3.8,.3,3.8,2.7,0,2-.8,3.9-1.6,5.8-8.4,18.2-35.6,38.2-55.6,40.1v-3.2c17.7-2.9,34.2-14,45.6-27.7,2.1-2.5,8.1-10.2,8.1-13.6,0-.4-.6-.8-.9-1h-35.3c-9,0-17.7-2.7-17.7-13.3s9-12.8,17.7-12.8h40.9v3.2h-40.9Z" />
+                                <path ref={S1} d="M674.69,11.5c-6.6,0-14.5,1.2-14.5,9.6s7.6,10.2,14.5,10.2h35.9c1.8,0,3.8,.3,3.8,2.7,0,2-.8,3.9-1.6,5.8-8.4,18.2-35.6,38.2-55.6,40.1v-3.2c17.7-2.9,34.2-14,45.6-27.7,2.1-2.5,8.1-10.2,8.1-13.6,0-.4-.6-.8-.9-1h-35.3c-9,0-17.7-2.7-17.7-13.3s9-12.8,17.7-12.8h40.9v3.2h-40.9Z" />
+                                <path ref={O} d="M721.59,44c0-20.5,16.7-37.2,37.2-37.2s37.2,16.7,37.2,37.2-16.7,37.2-37.2,37.2-37.2-16.7-37.2-37.2Zm3.1,0c0,18.8,15.3,34.1,34.1,34.1s34-15.3,34-34.1-15.2-34-34-34-34.1,15.2-34.1,34Z" />
+                                <path ref={N1} d="M860.29,79.9V37.1c-14.6-11.3-34.1-21.8-52.4-25.2V79.9h-3.2V8.4c17.4,1.5,41.9,14,55.6,24.8V8.4h3.2V79.9h-3.2Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <Menu /> 
+            </nav>
+            <Slide/>
+            <Cockie/>
+        </header>
     </>)
 }
