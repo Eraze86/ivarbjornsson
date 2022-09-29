@@ -30,7 +30,8 @@ export function Slide() {
             let found = seals.find((seal)=>seal.id === count.current)
             if( found === undefined){
                 console.log("error")
-            }else{ setSelected(found)
+            }else{
+                 setSelected(found)
             console.log("kolla om det finns",selected)}
          
         }else{
@@ -66,12 +67,12 @@ export function Slide() {
             <div className="relative lg:static max-w-full lg:w-3/6">
                 <div>{selected.img}</div>
                 {/* <img src={seal1} /> */}
-                <img src={left} onClick={prev} className="absolute right- bottom-3 lg:left-2/4" />
-                <img src={right} onClick={next} className="absolute right-2 bottom-3 lg:" />
+                <img src={left} alt="arrow left" onClick={prev} className="absolute bottom-3 lg:left-2/4" />
+                <img src={right} alt="arrow right" onClick={next} className="absolute right-2 bottom-3 lg:" />
             </div>
             <div className="max-w-full lg:w-3/6">
-                <h1 className="text-5xl lg:text-7xl m-7">{selected.title}</h1>
-                <p className="text-base lg:text-xl m-7">{selected.description}
+                <h1 className=" m-7">{selected.title}</h1>
+                <p className="lg:text-xl m-7">{selected.description}
                 </p>
             </div>
 

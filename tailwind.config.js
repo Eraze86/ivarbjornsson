@@ -4,7 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
     colors: {
       'primary': '#4DFAC6',
       'dark-primary': '#47D8AC',
@@ -16,9 +16,14 @@ module.exports = {
       'white': '#FFFFFF',
   
     },
+   
     fontFamily: {
-      sans: 'Oleo Script Swash Caps',
+      sans: 'Work Sans',
+    },
+    dropShadow: {
+      'lg2': '2px 4px 10px rgba(0, 0, 0, 0.25);',
     },
   },
+},
   plugins: [],
 }
