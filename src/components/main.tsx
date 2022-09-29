@@ -4,7 +4,7 @@ export function Main(){
     return(<>
 <section className="lg:flex mt-6  md:mr-36">
 <article className="lg:m-4 bg-[#00000080] flex flex-row text-white lg:w-4/6">
-    <img className="w-40 h-40 sm:w-96 sm:h-96" src={artist}/>
+    <img className="w-40 h-40 sm:w-96 sm:h-96" src={artist} alt="artist"/>
     <div className="m-4 w-4/6 pl-2 ">
         <h3 className="text-4xl pb-4">Om Ivar</h3>
     <p className="font-bold text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
