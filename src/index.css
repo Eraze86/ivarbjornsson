@@ -4,7 +4,7 @@
       @apply text-7xl;
     }
     h3{
-        @apply  text-4xl m-7
+        @apply  text-4xl my-7 mb-7
     }
     h5{
         @apply  text-xl

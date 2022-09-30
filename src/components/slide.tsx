@@ -71,8 +71,8 @@ export function Slide() {
             <div className="relative lg:static max-w-full lg:w-3/6">
                 <img alt="img of a seal with jewlry"src={selected.img}/>
               
-                <img src={left} alt="arrow left" onClick={prev} className="absolute bottom-3 lg:left-2/4 xl:bottom-5" />
-                <img src={right} alt="arrow right" onClick={next} className="absolute right-2 bottom-3 lg:bottom-8" />
+                <img src={left} alt="arrow left" onClick={prev} className="absolute bottom-3 lg:left-2/4 xl:bottom-36" />
+                <img src={right} alt="arrow right" onClick={next} className="absolute right-2 bottom-3 xl:bottom-36" />
             </div>
             <div className="max-w-full lg:w-3/6">
                 <h1 className="mx-7">{selected.title}</h1>
