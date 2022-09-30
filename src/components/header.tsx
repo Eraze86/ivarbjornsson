@@ -2,7 +2,7 @@ import { Menu } from "./menu"
 import { Slide } from "./slide"
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
-import { Cockie } from "./cockie";
+import { Cookie } from "./cockie";
 
 export function Header() {
     const I = useRef(null);
@@ -20,9 +20,9 @@ export function Header() {
     const N1 = useRef(null);
    
     const tl = gsap.timeline()
-    let time = { y: -15, yoyo: true , delay: -0.5, repeat: 1, duration: 0.3 }
-    useEffect(() => {
 
+    useEffect(() => {
+        let time = { y: -15, yoyo: true , delay: -0.5, repeat: 1, duration: 0.3 }
             tl.to([I.current], { y: -15, yoyo: true,  repeat: 1, duration: 0.2 })
             tl.to([V.current], time)
             tl.to([A.current], time)
@@ -67,7 +67,7 @@ export function Header() {
                 <Menu /> 
             </nav>
             <Slide/>
-            <Cockie/>
+            <Cookie/>
         </header>
     </>)
 }

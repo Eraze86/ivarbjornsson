@@ -34,13 +34,15 @@ export function Menu() {
         if (isOpen) {
             tl.to([toggle.current], { height: "18rem", ease: "none" })
             tl.to([link.current], { delay: 0.2, opacity: 1 })
-        } else {
-        
-        }
+        }else{
+           console.log("close") 
+      
+        } 
     }, [isOpen, tl])
 
+
     return (<>
-        <div className="p-4 lg:hidden z-10">
+        <div className="p-4 md:hidden z-10">
             <svg onClick={menu} width="47" height="26" viewBox="0 0 47 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path ref={line1} d="M0 3H46.5" stroke="#9747FF" strokeWidth="6" />
                 <path ref={line2} d="M0 13H46.5" stroke="#9747FF" strokeWidth="6" />
@@ -48,16 +50,16 @@ export function Menu() {
             </svg>
         </div>
 
-        <div className="hidden lg:block">
-            <ul className="lg: flex lg:flex-row p-6">
+        <div className="hidden md:block">
+            <ul className="flex lg:flex-row p-6">
                 <li className="mx-4">
-                    <a className="font-bold text-green-300 hover:text-green-400" href="www.hej.com">Länkar</a>
+                    <a className="font-bold text-primary hover:text-dark-primary" href="www.hej.com">Länkar</a>
                 </li>
                 <li className="mx-4">
-                    <a className="font-bold text-green-300 hover:text-green-400" href="www.hej.com">Länkar</a>
+                    <a className="font-bold text-primary hover:text-dark-primary" href="www.hej.com">Länkar</a>
                 </li>
                 <li className="mx-4">
-                    <a className="font-bold text-green-300 hover:text-green-400" href="www.hej.com">Länkar</a>
+                    <a className="font-bold text-primary hover:text-dark-primary" href="www.hej.com">Länkar</a>
                 </li>
             </ul>
 
@@ -65,7 +67,7 @@ export function Menu() {
 
 
         {isOpen && <>
-            <div ref={toggle} className=" z-10 w-56 h-0 bg-black  absolute top-16 right-0 lg:hidden ">
+            <div ref={toggle} className=" z-10 w-56 h-0 bg-black rounded-b-lg absolute top-16 right-0 md:hidden ">
                 <ul ref={link} className="opacity-0 flex flex-col items-center">
                     <li className="m-8">
                         <a className="font-bold text-green-300 hover:text-green-400" href="www.hej.com">Länkar</a>
